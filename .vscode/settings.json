@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
+  "javascript.format.enable": false,
+  "prettier.stylelintIntegration": true,
+  "prettier.eslintIntegration": true
+}

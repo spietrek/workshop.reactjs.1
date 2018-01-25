@@ -6,8 +6,8 @@ import Table from './Table';
 const HomePageContainer = props => {
   const { title } = props;
   return (
-    <PageTemplate pageTitle={title}>
-      <Table pageTitle={title} />
+    <PageTemplate title={title}>
+      <Table title={title} />
     </PageTemplate>
   );
 };

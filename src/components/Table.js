@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Table = props => {
-  const { pageTitle } = props;
-  return <div>{pageTitle} table content</div>;
+  const { title } = props;
+  return <div>{title} table content</div>;
 };
 
 Table.propTypes = {
-  pageTitle: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 export default Table;

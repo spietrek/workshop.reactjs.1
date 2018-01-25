@@ -56,12 +56,14 @@ const AppRoutes = props => (
         />
         <PropsRoute
           name="CreatePage"
+          title="Create Project"
           path="/create"
           component={CreatePageContainer}
           {...props}
         />
         <PropsRoute
           name="AdminPage"
+          title="Admin Settings"
           path="/admin"
           component={AdminPageContainer}
           {...props}

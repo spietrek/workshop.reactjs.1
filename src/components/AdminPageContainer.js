@@ -2,8 +2,8 @@ import React from 'react';
 import PageTemplate from './PageTemplate';
 
 const AdminPageContainer = () => {
-  const pageTitle = '[Admin Page]';
-  return <PageTemplate pageTitle={pageTitle}>admin page content</PageTemplate>;
+  const title = '[Admin Page]';
+  return <PageTemplate title={title}>admin page content</PageTemplate>;
 };
 
 export default AdminPageContainer;

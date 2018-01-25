@@ -6,18 +6,18 @@ import Sidebar from './Sidebar';
 import PageContent from './PageContent';
 
 const PageTemplate = props => {
-  const { pageTitle, children } = props;
+  const { title, children } = props;
   return (
     <PageContainer>
       <Sidebar />
-      <PageHeader title={pageTitle} />
+      <PageHeader title={title} />
       <PageContent displayBlock="true">{children}</PageContent>
     </PageContainer>
   );
 };
 
 PageTemplate.propTypes = {
-  pageTitle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 

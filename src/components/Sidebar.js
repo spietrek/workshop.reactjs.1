@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import HomeIcon from 'react-icons/lib/fa/home';
 import WarningIcon from 'react-icons/lib/md/warning';
 import InfoCircleIcon from 'react-icons/lib/fa/info-circle';
@@ -44,40 +44,34 @@ const NavListLink = styled(NavLink)`
   }
 `;
 
-const HomeIconLink = styled(HomeIcon)`
+const BaseIconLink = css`
   font-size: 16px;
   margin-right: 10px;
   padding-bottom: 5px;
+`;
+
+const HomeIconLink = styled(HomeIcon)`
+  ${BaseIconLink};
 `;
 
 const WarningIconLink = styled(WarningIcon)`
-  font-size: 16px;
-  margin-right: 10px;
-  padding-bottom: 5px;
+  ${BaseIconLink};
 `;
 
 const InfoCircleIconLink = styled(InfoCircleIcon)`
-  font-size: 18px;
-  margin-right: 10px;
-  padding-bottom: 5px;
+  ${BaseIconLink};
 `;
 
 const ThumbsUpIconLink = styled(ThumbsUpIcon)`
-  font-size: 16px;
-  margin-right: 10px;
-  padding-bottom: 5px;
+  ${BaseIconLink};
 `;
 
 const PlusIconLink = styled(PlusIcon)`
-  font-size: 16px;
-  margin-right: 10px;
-  padding-bottom: 5px;
+  ${BaseIconLink};
 `;
 
 const CogIconLink = styled(CogIcon)`
-  font-size: 16px;
-  margin-right: 10px;
-  padding-bottom: 5px;
+  ${BaseIconLink};
 `;
 
 const NavListLinkActive = {

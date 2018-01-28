@@ -16,10 +16,8 @@ const PageHeader = props => {
   const { title } = props;
   return (
     <StyledHeader>
-      <div>
-        <PageTitle title={title} />
-        {props.children}
-      </div>
+      <PageTitle title={title} />
+      {props.children}
     </StyledHeader>
   );
 };
